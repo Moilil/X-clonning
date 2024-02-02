@@ -35,7 +35,7 @@ export const Input = styled.input`
   &[type="submit"] {
     cursor: pointer;
     &:hover {
-      opacity: 0.8;
+      opacity: 0.9;
     }
   }
 `;
