@@ -87,6 +87,8 @@ export default function PostTweetForm() {
         username: user.displayName || "Anonymous",
         userId: user.uid,
       });
+
+      /* file uploading */
       if (file) {
         // 업로드된 파일이 저장되는 폴더 명과 파일 명 지정하기
         const locationRef = ref(

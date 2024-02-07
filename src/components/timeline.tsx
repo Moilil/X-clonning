@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { db } from "../firebase";
 import {
   collection,
-  getDocs,
+  //getDocs,
   limit,
   onSnapshot,
   orderBy,
@@ -13,7 +13,7 @@ import Tweet from "./tweet";
 import { Unsubscribe } from "firebase/auth";
 
 export interface ITweet {
-  id: string;
+  id: string; // 문서 id, 이미지 id와 동일
   photo?: string;
   tweet: string;
   userId: string;
@@ -25,6 +25,7 @@ const Wrapper = styled.div`
   display: flex;
   gap: 10px;
   flex-direction: column;
+  overflow-y: scroll;
 `;
 
 export default function Timeline() {
